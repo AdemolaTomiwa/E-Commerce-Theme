@@ -1,0 +1,87 @@
+#sign-in {
+   background-color: $white-color;
+   color: $black-color;
+   padding: 2rem 0;
+}
+
+.sign-in {
+   display: grid;
+   grid-template-columns: repeat(2, 1fr);
+
+   .login-section {
+      border-right: 1px solid $primary-color;
+      padding: 0 4rem;
+
+      h2 {
+         font-size: 3rem;
+         color: $primary-color;
+      }
+
+      h3 {
+         font-size: 1.5rem;
+         margin-bottom: 1.5rem;
+
+         i {
+            color: $primary-color;
+         }
+      }
+
+      form {
+         input {
+            outline: none;
+            border: 2px solid $primary-color;
+            padding: 0.5rem 1rem;
+            margin: 0.7rem 0;
+            width: 100%;
+            font-size: 1.2rem;
+         }
+
+         input[type='checkbox'] {
+            width: inherit;
+         }
+
+         label {
+            color: $primary-color;
+         }
+      }
+
+      button {
+         background-color: $primary-color;
+         color: $white-color;
+         padding: 0.5rem 2rem;
+         width: 100%;
+         margin: 1.5rem 0;
+         font-size: 1.5rem;
+         outline: none;
+         border: none;
+         cursor: pointer;
+      }
+   }
+
+   .create-acct-section {
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+      flex-direction: column;
+      padding: 0 4rem;
+
+      h2 {
+         font-size: 3rem;
+         color: $primary-color;
+      }
+
+      a {
+         button {
+            background-color: $primary-color;
+            color: $white-color;
+            padding: 0.5rem 2rem;
+            width: 100%;
+            margin: 1.5rem 0;
+            font-size: 1.5rem;
+            outline: none;
+            border: none;
+            cursor: pointer;
+         }
+      }
+   }
+}

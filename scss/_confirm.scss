@@ -1,0 +1,65 @@
+#confirm {
+   background-color: $white-color;
+   color: $black-color;
+   padding: 2rem 0;
+}
+
+.confirm {
+   h2 {
+      font-size: 3rem;
+      color: $primary-color;
+      margin-bottom: 2rem;
+   }
+
+   .box {
+      margin: 1rem 0;
+      background-color: $light-color;
+      padding: 1rem;
+   }
+
+   .ordered-items {
+      .items {
+         margin-top: 1rem;
+         padding: 0 2rem;
+         .item {
+            background-color: $grey-color;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            margin: 0.5rem 0;
+
+            div {
+               padding: 0.5rem 0;
+               display: flex;
+               align-items: center;
+               justify-content: center;
+               border: 1px solid $black-color;
+
+               span {
+                  color: $primary-color;
+               }
+            }
+         }
+      }
+   }
+
+   .summary {
+      p {
+         margin: 0.5rem 0;
+      }
+
+      span {
+         color: $primary-color;
+      }
+   }
+
+   button {
+      background-color: $primary-color;
+      color: $white-color;
+      padding: 0.5rem 2rem;
+      margin: 0;
+      font-size: 1.5rem;
+      outline: none;
+      border: none;
+      cursor: pointer;
+   }
+}

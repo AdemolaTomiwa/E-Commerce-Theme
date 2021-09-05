@@ -1,5 +1,13 @@
 @import 'config';
 @import 'utilities';
+@import 'sign-in';
+@import 'sign-up';
+@import 'shopping-cart';
+@import 'shipping';
+@import 'payment';
+@import 'confirm';
+@import 'user-profile';
+@import 'shoes';
 
 * {
    margin: 0%;
@@ -41,7 +49,7 @@ header {
          border: none;
          padding: 0.5rem 1rem;
          margin-right: 2rem;
-         font-size: 1rem;
+         font-size: 1.2rem;
       }
 
       a {
@@ -294,6 +302,7 @@ footer {
       flex-direction: column;
       align-items: center;
       justify-content: center;
+      padding-bottom: 2rem;
 
       form {
          width: 100%;
@@ -305,7 +314,7 @@ footer {
             padding: 0.5rem 1rem;
             margin-right: -5px;
             width: 70%;
-            font-size: 1rem;
+            font-size: 1.2rem;
          }
 
          button {
@@ -313,17 +322,15 @@ footer {
             color: $white-color;
             padding: 0.5rem 2rem;
             margin: 1.5rem 0;
-            font-size: 1rem;
+            font-size: 1.2rem;
             outline: none;
             border: 3px solid $white-color;
-            font-weight: bold;
             cursor: pointer;
          }
       }
    }
 
    .copyright {
-      padding-top: 2rem;
       color: $primary-color;
       font-weight: bold;
 

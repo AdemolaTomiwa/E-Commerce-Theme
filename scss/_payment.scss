@@ -1,0 +1,65 @@
+.payment-body {
+   position: relative;
+   height: 100vh;
+
+   footer {
+      width: 100%;
+      position: absolute;
+      bottom: 0;
+   }
+}
+
+#payment {
+   background-color: $white-color;
+   color: $black-color;
+   padding: 2rem 0;
+}
+
+.payment {
+   h2 {
+      font-size: 3rem;
+      color: $primary-color;
+      margin-bottom: 1rem;
+   }
+
+   form {
+      div {
+         margin: 0.5rem 0;
+
+         input[type='checkbox'] {
+            width: 1.1rem;
+            height: 1.1rem;
+            border-radius: 100%;
+            vertical-align: middle;
+            border: 2px solid $primary-color;
+            -webkit-appearance: none;
+            outline: none;
+            cursor: pointer;
+            transition: all ease-in 0.1s;
+            cursor: pointer;
+         }
+
+         input[type='checkbox']:checked {
+            background-color: $primary-color;
+            width: 1rem;
+            height: 1rem;
+         }
+
+         label {
+            font-size: 1.1rem;
+            cursor: pointer;
+         }
+      }
+
+      button {
+         background-color: $primary-color;
+         color: $white-color;
+         padding: 0.5rem 2rem;
+         margin: 1.5rem 0;
+         font-size: 1.5rem;
+         outline: none;
+         border: none;
+         cursor: pointer;
+      }
+   }
+}

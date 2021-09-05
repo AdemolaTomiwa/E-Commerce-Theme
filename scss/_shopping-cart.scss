@@ -1,0 +1,65 @@
+#shopping-cart {
+   background-color: $white-color;
+   color: $black-color;
+   padding: 2rem 0;
+}
+
+.shopping-cart {
+   h2 {
+      font-size: 3rem;
+      color: $primary-color;
+      margin-bottom: 2rem;
+   }
+
+   .items {
+      .item {
+         background-color: $grey-color;
+         display: grid;
+         grid-template-columns: repeat(5, 1fr);
+         margin: 1rem 0;
+
+         div {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border: 1px solid $black-color;
+
+            span {
+               color: $primary-color;
+            }
+
+            i {
+               font-size: 2rem;
+               cursor: pointer;
+            }
+
+            img {
+               width: 150px;
+            }
+         }
+      }
+   }
+
+   .total {
+      padding: 2rem 0;
+      h3 {
+         font-size: 2rem;
+         span {
+            color: $primary-color;
+         }
+      }
+
+      a {
+         button {
+            background-color: $primary-color;
+            color: $white-color;
+            padding: 0.5rem 2rem;
+            margin: 1.5rem 0;
+            font-size: 1.5rem;
+            outline: none;
+            border: none;
+            cursor: pointer;
+         }
+      }
+   }
+}
