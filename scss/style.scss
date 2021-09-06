@@ -7,7 +7,7 @@
 @import 'payment';
 @import 'confirm';
 @import 'user-profile';
-@import 'shoes';
+@import 'product';
 
 * {
    margin: 0%;
@@ -25,6 +25,7 @@ body {
    color: $black-color;
 }
 
+// HEADER SECTION
 header {
    background-color: $primary-color;
    color: $white-color;
@@ -39,260 +40,214 @@ header {
       }
    }
 
-   .header-icons {
+   .icons {
       display: flex;
       align-items: center;
       justify-content: space-between;
 
-      input {
-         outline: none;
-         border: none;
-         padding: 0.5rem 1rem;
-         margin-right: 2rem;
-         font-size: 1.2rem;
-      }
-
       a {
-         color: $white-color;
          margin-left: 2rem;
 
          i {
-            font-size: 1.5rem;
+            color: $white-color;
          }
       }
    }
 }
 
+// SHOWCASE SECTION
 #showcase {
    background-color: $light-color;
    padding: 1rem 0;
-}
 
-.showcase {
-   display: flex;
-   flex-direction: column;
-   align-items: center;
-   justify-content: center;
-
-   &-intro {
-      font-size: 4rem;
-   }
-
-   &-text {
-      font-size: 1.7rem;
-   }
-
-   &-img {
-      margin-top: 2.5rem;
-      height: 500px;
-      object-fit: cover;
-   }
-}
-
-#martens {
-   background-color: $primary-color;
-   color: $white-color;
-}
-
-.martens {
-   display: flex;
-   padding: 1rem 0;
-
-   &-img {
-      flex: 1;
+   .showcase {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
 
       img {
-         height: 100%;
-         width: 90%;
+         margin-top: 2.5rem;
+         height: 500px;
          object-fit: cover;
       }
    }
+}
 
-   &-content {
-      flex: 2;
+// Dr. MARTENS SECTION
+#dr-martens {
+   background-color: $primary-color;
+   color: $white-color;
+
+   .dr-martens {
       display: flex;
-      flex-direction: column;
-      align-items: flex-start;
+      align-items: center;
       justify-content: center;
-      padding: 0 3rem;
+      padding: 1rem 0;
 
-      h2 {
-         font-size: 3rem;
+      .img {
+         flex: 1;
+
+         img {
+            height: 100%;
+            width: 90%;
+            object-fit: cover;
+         }
       }
 
-      button {
-         background-color: $light-color;
-         color: $primary-color;
-         padding: 0.5rem 2rem;
-         margin: 1.5rem 0;
-         font-size: 1.5rem;
-         outline: none;
-         border: none;
-         font-weight: bold;
-         cursor: pointer;
+      .content {
+         flex: 2;
+         display: flex;
+         flex-direction: column;
+         align-items: flex-start;
+         justify-content: center;
+         padding: 0 3rem;
       }
    }
 }
 
+// JIMMY CHOO SECTION
 #jimmy-choo {
    background-color: $light-color;
    padding: 1.5rem 0;
-}
 
-.jimmy-choo {
-   display: flex;
-   flex-direction: column;
-   align-items: center;
-   justify-content: center;
+   .jimmy-choo {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
 
-   h2 {
-      font-size: 3rem;
-   }
-
-   &-img {
-      margin-top: 2.5rem;
-      height: 500px;
-      object-fit: cover;
+      img {
+         margin-top: 2.5rem;
+         height: 500px;
+         object-fit: cover;
+      }
    }
 }
 
+// BOXES SECTION
 #boxes {
    background-color: $light-color;
    padding: 1rem 0;
-}
 
-.boxes {
-   display: grid;
-   grid-template-columns: repeat(2, 1fr);
-   grid-gap: 2rem;
+   .boxes {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-gap: 2rem;
 
-   .box {
-      background-color: $grey-color;
-      padding: 2rem;
+      .box {
+         background-color: $grey-color;
+         padding: 2rem;
 
-      h3 {
-         font-size: 2rem;
-         text-align: center;
-         margin-bottom: 1rem;
+         h3 {
+            text-align: center;
+            margin-bottom: 1rem;
+         }
+      }
+
+      .last {
+         background-color: $primary-color;
+
+         h3 {
+            color: $white-color;
+         }
       }
    }
-
-   .last {
-      background-color: $primary-color;
-
-      a {
-         color: $white-color;
-      }
-   }
 }
 
+// TOP BRANDS
 #top-brands {
    background-color: $black-color;
    color: $white-color;
    padding: 2rem 0;
-}
 
-.top-brands {
-   display: flex;
-   flex-direction: column;
-   align-items: center;
-   justify-content: center;
-
-   h2 {
-      font-size: 3rem;
-   }
-
-   .img {
+   .top-brands {
       display: flex;
-      flex-wrap: wrap;
+      flex-direction: column;
       align-items: center;
-      justify-content: space-between;
-      width: 100%;
-      cursor: pointer;
+      justify-content: center;
 
-      img {
-         width: 200px;
+      .img {
+         display: flex;
+         flex-wrap: wrap;
+         align-items: center;
+         justify-content: space-between;
+         width: 100%;
+         cursor: pointer;
+
+         img {
+            width: 200px;
+         }
       }
    }
 }
 
+// DISCOUNT
 #discount {
    background-color: $primary-color;
    color: $white-color;
    padding: 3rem 0;
-}
 
-.discount {
-   display: flex;
-   align-items: center;
-   justify-content: space-between;
+   .discount {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
 
-   .logo {
-      flex: 1;
-      h2 {
-         font-size: 3rem;
-         line-height: 1.1;
+      div {
+         margin: 0 1rem;
+         text-align: center;
       }
-   }
 
-   &-content {
-      flex: 1;
+      .logo {
+         flex: 1;
 
-      p {
-         font-size: 14px;
-         margin: 0rem;
+         h2 {
+            line-height: 1.1;
+         }
       }
-   }
 
-   .sign-up {
-      flex: 1;
+      .content {
+         flex: 1;
 
-      button {
-         background-color: #88b4d4;
-         color: $white-color;
-         padding: 0.5rem 2rem;
-         margin: 1.5rem 0;
-         font-size: 1.5rem;
-         outline: none;
-         border: none;
-         font-weight: bold;
-         cursor: pointer;
+         p {
+            margin: 0.5rem;
+         }
       }
-   }
 
-   div {
-      margin: 0 1rem;
-      text-align: center;
+      .sign-up {
+         flex: 1;
+
+         button {
+            background-color: $white-color;
+            color: $primary-color;
+         }
+      }
    }
 }
 
+// SOCIAL SECTION
 #social {
    background-color: $white-color;
    color: $primary-color;
    padding: 2rem 0;
-}
 
-.social {
-   display: flex;
-   flex-direction: column;
-   align-items: center;
-   justify-content: center;
+   .social {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
 
-   h3 {
-      font-size: 2rem;
-   }
-
-   a {
-      color: $primary-color;
-
-      i {
-         font-size: 2.5rem;
-         margin: 1rem;
-         margin-bottom: 0;
+      a {
+         i {
+            font-size: 2.5rem;
+            margin: 1rem;
+            margin-bottom: 0;
+         }
       }
    }
 }
 
+// FOOTER SECTION
 footer {
    background-color: #d9dade;
    padding: 2rem 0;
@@ -309,23 +264,16 @@ footer {
          text-align: center;
 
          input {
-            outline: none;
-            border: 3px solid $white-color;
-            padding: 0.5rem 1rem;
             margin-right: -5px;
+            border: 3px solid $white-color;
             width: 70%;
-            font-size: 1.2rem;
          }
 
          button {
             background-color: $primary-color;
             color: $white-color;
-            padding: 0.5rem 2rem;
-            margin: 1.5rem 0;
             font-size: 1.2rem;
-            outline: none;
             border: 3px solid $white-color;
-            cursor: pointer;
          }
       }
    }
@@ -339,3 +287,5 @@ footer {
       }
    }
 }
+
+@import 'mobile';

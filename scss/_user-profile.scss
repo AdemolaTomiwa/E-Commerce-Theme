@@ -1,48 +1,29 @@
-#user-profile {
-   background-color: $white-color;
-   color: $black-color;
-   padding: 2rem 0;
-}
-
 .user-profile {
+   padding-top: 2rem;
    margin-bottom: 2rem;
+
    h2 {
-      font-size: 3rem;
       color: $primary-color;
       margin-bottom: 2rem;
    }
 
    form {
-      input {
-         outline: none;
-         border: 2px solid $primary-color;
-         padding: 0.5rem 1rem;
-         margin: 0.7rem 0;
-         width: 100%;
-         font-size: 1.2rem;
-      }
-
       button {
          background-color: $primary-color;
          color: $white-color;
-         padding: 0.5rem 2rem;
          width: 100%;
-         margin: 1.5rem 0;
-         font-size: 1.5rem;
-         outline: none;
-         border: none;
-         cursor: pointer;
       }
    }
 }
 
 .my-order {
    margin-bottom: 2rem;
+
    h2 {
-      font-size: 3rem;
       color: $primary-color;
       margin-bottom: 2rem;
    }
+
    .items {
       margin-top: 1rem;
       padding: 0 2rem;
@@ -59,10 +40,7 @@
             align-items: center;
             justify-content: center;
             border: 1px solid $black-color;
-
-            span {
-               color: $primary-color;
-            }
+            text-align: center;
          }
       }
    }

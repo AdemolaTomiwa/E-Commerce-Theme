@@ -1,0 +1,246 @@
+@media (max-width: 1024px) {
+   button {
+      font-size: 1rem;
+   }
+
+   h1 {
+      font-size: 3.5rem;
+   }
+
+   h2 {
+      font-size: 2.5rem;
+   }
+
+   h3 {
+      font-size: 1.5rem;
+   }
+
+   h4 {
+      font-size: 1rem;
+   }
+
+   h5 {
+      font-size: 0.8rem;
+   }
+
+   p {
+      font-size: 12px;
+   }
+
+   //HOME PAGE
+   // TOP BRANDS
+   #top-brands {
+      .top-brands {
+         .img {
+            img {
+               width: 150px;
+            }
+         }
+      }
+   }
+
+   // SOCIAL SECTION
+   #social {
+      .social {
+         a {
+            i {
+               font-size: 2rem;
+            }
+         }
+      }
+   }
+
+   //SHOPPING PAGE
+   .shopping-cart {
+      .items {
+         .item {
+            div {
+               img {
+                  width: 100px;
+               }
+            }
+         }
+      }
+   }
+
+   //USER PROFILE
+   .my-order {
+      .items {
+         padding: 0 1rem;
+      }
+   }
+
+   //SIGN IN PAGE
+   .sign-in {
+      .login-section,
+      .create-acct-section {
+         padding: 0 2rem;
+      }
+   }
+
+   //    PRODUCT PAGE
+   .products {
+      .product {
+         .img {
+            img {
+               object-fit: contain;
+            }
+         }
+
+         .content {
+            padding: 0 1rem;
+         }
+      }
+   }
+
+   .line {
+      margin: 2rem auto;
+   }
+
+   .description,
+   .key-features {
+      h3 {
+         margin-bottom: 1rem;
+      }
+
+      li {
+         margin: 0.5rem 0;
+         font-size: 15px;
+      }
+   }
+}
+
+@media (max-width: 780px) {
+   .body {
+      position: relative;
+      height: 100vh;
+
+      footer {
+         width: 100%;
+         position: absolute;
+         bottom: 0;
+      }
+   }
+   i {
+      font-size: 1rem;
+      color: $primary-color;
+      cursor: pointer;
+   }
+   h1 {
+      font-size: 2.5rem;
+   }
+
+   h2 {
+      font-size: 2rem;
+   }
+
+   h3 {
+      font-size: 1rem;
+   }
+
+   h4 {
+      font-size: 0.8rem;
+   }
+
+   h5 {
+      font-size: 0.6rem;
+   }
+
+   p {
+      font-size: 12px;
+   }
+
+   header {
+      .icons {
+         input {
+            display: none;
+         }
+      }
+   }
+
+   #dr-martens {
+      .dr-martens {
+         .content {
+            padding: 0 0.5rem;
+         }
+      }
+   }
+
+   #discount {
+      .discount {
+         flex-direction: column;
+
+         .content {
+            padding: 2rem 2rem 0 2rem;
+         }
+
+         .sign-up {
+            flex: 1;
+
+            button {
+               // padding: 0.5rem 1rem;
+               margin: 0;
+            }
+         }
+      }
+   }
+
+   #social {
+      .social {
+         a {
+            i {
+               font-size: 2.5rem;
+            }
+         }
+      }
+   }
+
+   .sign-in {
+      grid-template-columns: 1fr;
+
+      .login-section {
+         border-right: none;
+
+         p {
+            display: block;
+         }
+      }
+
+      .create-acct-section {
+         display: none;
+      }
+   }
+
+   .products {
+      .product {
+         grid-template-columns: 1fr;
+
+         .content {
+            padding: 0;
+         }
+      }
+   }
+
+   footer {
+      padding: 1rem 0;
+
+      .news {
+         display: none;
+      }
+   }
+}
+
+@media (max-width: 580px) {
+   #dr-martens {
+      .dr-martens {
+         flex-direction: column;
+
+         .img {
+            img {
+               height: 350px;
+               width: 100%;
+            }
+         }
+      }
+   }
+}

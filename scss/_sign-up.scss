@@ -1,59 +1,17 @@
-#sign-up {
-   background-color: $white-color;
-   color: $black-color;
-   padding: 2rem 0;
-}
-
 .sign-up {
+   padding: 2rem 0;
+
    h2 {
-      font-size: 3rem;
       color: $primary-color;
    }
 
-   h3 {
-      font-size: 1.5rem;
+   h4 {
       margin-bottom: 1rem;
-
-      i {
-         color: $primary-color;
-      }
-   }
-
-   form {
-      input {
-         outline: none;
-         border: 2px solid $primary-color;
-         padding: 0.5rem 1rem;
-         margin: 0.7rem 0;
-         width: 100%;
-         font-size: 1.2rem;
-         // color: red;
-      }
-
-      input[type='checkbox'] {
-         width: inherit;
-      }
-
-      label {
-         color: $primary-color;
-      }
    }
 
    button {
       background-color: $primary-color;
       color: $white-color;
-      padding: 0.5rem 2rem;
       width: 100%;
-      margin: 1.5rem 0;
-      font-size: 1.5rem;
-      outline: none;
-      border: none;
-      cursor: pointer;
-   }
-
-   p {
-      a {
-         color: $primary-color;
-      }
    }
 }

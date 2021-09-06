@@ -1,60 +1,28 @@
-#sign-in {
-   background-color: $white-color;
-   color: $black-color;
-   padding: 2rem 0;
-}
-
 .sign-in {
    display: grid;
    grid-template-columns: repeat(2, 1fr);
+   padding: 2rem 0;
 
    .login-section {
       border-right: 1px solid $primary-color;
       padding: 0 4rem;
 
       h2 {
-         font-size: 3rem;
          color: $primary-color;
       }
 
-      h3 {
-         font-size: 1.5rem;
+      h4 {
          margin-bottom: 1.5rem;
-
-         i {
-            color: $primary-color;
-         }
       }
 
-      form {
-         input {
-            outline: none;
-            border: 2px solid $primary-color;
-            padding: 0.5rem 1rem;
-            margin: 0.7rem 0;
-            width: 100%;
-            font-size: 1.2rem;
-         }
-
-         input[type='checkbox'] {
-            width: inherit;
-         }
-
-         label {
-            color: $primary-color;
-         }
+      p {
+         display: none;
       }
 
       button {
          background-color: $primary-color;
          color: $white-color;
-         padding: 0.5rem 2rem;
          width: 100%;
-         margin: 1.5rem 0;
-         font-size: 1.5rem;
-         outline: none;
-         border: none;
-         cursor: pointer;
       }
    }
 
@@ -66,22 +34,12 @@
       padding: 0 4rem;
 
       h2 {
-         font-size: 3rem;
          color: $primary-color;
       }
 
-      a {
-         button {
-            background-color: $primary-color;
-            color: $white-color;
-            padding: 0.5rem 2rem;
-            width: 100%;
-            margin: 1.5rem 0;
-            font-size: 1.5rem;
-            outline: none;
-            border: none;
-            cursor: pointer;
-         }
+      button {
+         background-color: $primary-color;
+         color: $white-color;
       }
    }
 }
