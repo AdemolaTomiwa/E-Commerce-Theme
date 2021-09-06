@@ -87,3 +87,25 @@ form {
 span {
    color: $primary-color;
 }
+
+// .body {
+//    position: relative;
+//    height: 100vh;
+
+//    footer {
+//       width: 100%;
+//       position: absolute;
+//       bottom: 0;
+//    }
+// }
+
+.payment-body {
+   position: relative;
+   height: 100vh;
+
+   footer {
+      width: 100%;
+      position: absolute;
+      bottom: 0;
+   }
+}
